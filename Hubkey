@@ -169,9 +169,9 @@ local Tab = Window:MakeTab({
 	Icon = "rbxassetid://16385658023",
 	PremiumOnly = false
 })
-Tab:AddParagraph("更新5个游戏","")
-Tab:AddParagraph("一共支持28种游戏","")
-Tab:AddParagraph("更新最强战场,监狱人生,巨魔世界,力量传奇,鲨口求生","")
+Tab:AddParagraph("更新2个游戏","")
+Tab:AddParagraph("一共支持30种游戏","")
+Tab:AddParagraph("更新巨人生存,越狱","")
 
 local Tab = Window:MakeTab({
     Name = "通用功能",
