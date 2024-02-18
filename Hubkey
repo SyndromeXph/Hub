@@ -441,7 +441,7 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 Tab:AddButton({
-	Name = "动感星期五(用不了)",
+	Name = "动感星期五(部分可能用不了)",
 	Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Nadir3709/RandomScript/main/FunkyFridayMobile"))()
 end
