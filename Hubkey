@@ -151,7 +151,7 @@ local FrameUpdateTable = { }
 Heartbeat:Connect(HeartbeatUpdate)
 local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/nJJPrp2w"))()
 local Window = OrionLib:MakeWindow({Name = "SyndromeXHUB", HidePremium = false, IntroText = "原神启动"})
-game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "您是白名单用户"; Text ="欢迎使用综合症中心"; Duration = 4; })
+game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "多多支持"; Text ="欢迎使用综合症中心"; Duration = 4; })
 local Tab = Window:MakeTab({
     Name = "关于",
 	Icon = "rbxassetid://16385658023",
@@ -251,6 +251,13 @@ end
 })
 
 Tab:AddButton({
+	Name = "无限跳跃",
+	Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/4jbsfvwH"))()
+end
+})
+
+Tab:AddButton({
 	Name = "范围",
 	Callback = function()
 loadstring(game:HttpGet("https://pastebin.com/raw/eWH26KPn"))()
@@ -330,9 +337,9 @@ end)
    end
 })
 Tab:AddButton({
-	Name = "飞行",
+	Name = "飞行V3",
 	Callback = function()
-loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\103\105\115\116\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\109\101\111\122\111\110\101\89\84\47\98\102\48\51\55\100\102\102\57\102\48\97\55\48\48\49\55\51\48\52\100\100\100\54\55\102\100\99\100\51\55\48\47\114\97\119\47\101\49\52\101\55\52\102\52\50\53\98\48\54\48\100\102\53\50\51\51\52\51\99\102\51\48\98\55\56\55\48\55\52\101\98\51\99\53\100\50\47\97\114\99\101\117\115\37\50\53\50\48\120\37\50\53\50\48\102\108\121\37\50\53\50\48\50\37\50\53\50\48\111\98\102\108\117\99\97\116\111\114\39\41\44\116\114\117\101\41\41\40\41\10\10")()
+loadstring(game:HttpGet("https://pastebin.com/raw/sRYn4RJ0"))()
 end
 })
 local Tab = Window:MakeTab({
@@ -418,6 +425,13 @@ Tab:AddButton({
 	Name = "Fish Script",
 	Callback = function()
 loadstring("\108\111\97\100\115\116\114\105\110\103\40\71\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\120\105\97\111\120\105\97\111\121\117\50\50\51\51\47\120\105\97\111\120\105\97\111\121\117\47\109\97\105\110\47\120\105\97\111\120\105\97\111\121\117\34\41\41\40\41\10")()
+end
+})
+
+Tab:AddButton({
+	Name = "狼脚本",
+	Callback = function()
+loadstring(game:HttpGet(('https://shz.al/~wolfScriptFree')))()
 end
 })
 
@@ -607,6 +621,13 @@ Tab:AddButton({
 	Name = "猫娘脚本(NEKO)",
 	Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Tescalus/Pendulum-Hubs-Source/main/Pendulum%20Hub%20V5.lua"))()
+end
+})
+
+Tab:AddButton({
+	Name = "变成蛇",
+	Callback = function()
+loadstring(game:HttpGet(('https://pastefy.ga/tWBTcE4R/raw'),true))()
 end
 })
 
@@ -810,6 +831,53 @@ Tab:AddButton({
 	Name = "鲨口求生",
 	Callback = function()
 loadstring(game:HttpGet("https://pastebin.com/raw/YYVLbzVg", true))()
+end
+})
+local Tab = Window:MakeTab({
+    Name = "KAT",
+	Icon = "rbxassetid://16385658023",
+	PremiumOnly = false
+})
+Tab:AddButton({
+	Name = "KAT脚本",
+	Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/6rd91GZx", true))()
+end
+})
+
+local Tab = Window:MakeTab({
+    Name = "FE脚本",
+	Icon = "rbxassetid://16385658023",
+	PremiumOnly = false
+})
+Tab:AddButton({
+	Name = "黑洞脚本",
+	Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/kPcENzLB"))()
+end
+})
+
+local Tab = Window:MakeTab({
+    Name = "越狱",
+	Icon = "rbxassetid://16385658023",
+	PremiumOnly = false
+})
+Tab:AddButton({
+	Name = "越狱脚本",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/opBandwidth/Magma-Core/main/Jailbreak/Main.lua"))()
+end
+})
+
+local Tab = Window:MakeTab({
+    Name = "巨人生存",
+	Icon = "rbxassetid://16385658023",
+	PremiumOnly = false
+})
+Tab:AddButton({
+	Name = "HOHO",
+	Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
 end
 })
 else
