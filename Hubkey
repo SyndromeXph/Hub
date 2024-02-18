@@ -98,6 +98,78 @@ end
 if game.Players.LocalPlayer.Name == "zrugwja" then 
 Whitelisted = true 
 end
+
+if game.Players.LocalPlayer.Name == "xiaolureng5" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "askyyds" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "AGcaiwui" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "AGCaiwu" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "zy88uk" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "cnm_dog" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "qkbsibbo" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "hubailin123" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "hsjdsjns" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "wanyeeme" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "yingj114514" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "Diaodes1145140" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "74aweg" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "eee9eer" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "qwq23qq" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "xiaoFBL" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "laojiangl" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "stys3721" then 
+Whitelisted = true 
+end
 if Whitelisted == true then
 
 CoreGui:SetCore("SendNotification", {
@@ -226,6 +298,32 @@ Tab:AddButton({
 	Name = "键盘",
 	Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+end
+})
+
+Tab:AddButton({
+	Name = "穿墙(新)",
+	Callback = function()
+if Value then
+		    Noclip = true
+		    Stepped = game.RunService.Stepped:Connect(function()
+			    if Noclip == true then
+				    for a, b in pairs(game.Workspace:GetChildren()) do
+                        if b.Name == game.Players.LocalPlayer.Name then
+                            for i, v in pairs(game.Workspace[game.Players.LocalPlayer.Name]:GetChildren()) do
+                                if v:IsA("BasePart") then
+                                    v.CanCollide = false
+                                end
+                            end
+                        end
+                    end
+			    else
+				    Stepped:Disconnect()
+			    end
+		    end)
+	    else
+		    Noclip = false
+	    end
 end
 })
 
