@@ -299,8 +299,8 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/
 end
 })
 
-Tab:Addbutton({
-        Name = "爬墙",
+Tab:AddButton({
+    Name = "爬墙",
 	Callback = function()
 loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))()
 end
