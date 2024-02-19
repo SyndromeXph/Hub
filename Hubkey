@@ -98,6 +98,126 @@ end
 if game.Players.LocalPlayer.Name == "zrugwja" then 
 Whitelisted = true 
 end
+
+if game.Players.LocalPlayer.Name == "xiaolureng5" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "askyyds" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "AGcaiwui" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "AGCaiwu" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "zy88uk" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "cnm_dog" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "qkbsibbo" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "hubailin123" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "hsjdsjns" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "wanyeeme" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "yingj114514" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "Diaodes1145140" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "74aweg" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "eee9eer" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "qwq23qq" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "xiaoFBL" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "laojiangl" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "stys3721" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "Ehhsbsuj" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "CN_OPH" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "fl89292" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "cyrcsh" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "yuhjnmnmhjyu" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "Flys_Bird2" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "ikn66663" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "ikun5112" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "ikun5114" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "shoessssssssssslole" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "ijenshn" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "xinianxiangsui" then 
+Whitelisted = true 
+end
 if Whitelisted == true then
 
 CoreGui:SetCore("SendNotification", {
@@ -169,9 +289,9 @@ local Tab = Window:MakeTab({
 	Icon = "rbxassetid://16385658023",
 	PremiumOnly = false
 })
-Tab:AddParagraph("更新2个游戏","")
-Tab:AddParagraph("一共支持30种游戏","")
-Tab:AddParagraph("更新巨人生存,越狱","")
+Tab:AddParagraph("更新5个游戏","")
+Tab:AddParagraph("一共支持28种游戏","")
+Tab:AddParagraph("更新最强战场,监狱人生,巨魔世界,力量传奇,鲨口求生","")
 
 local Tab = Window:MakeTab({
     Name = "通用功能",
@@ -222,15 +342,6 @@ Tab:AddTextbox({
 	end
 })
 
-Tab:AddTextbox({
-	Name = "重力设置",
-	Default = "",
-	TextDisappear = true,
-	Callback = function(Value)
-		game.Workspace.Gravity = Value
-	end
-})
-
 Tab:AddButton({
 	Name = "键盘",
 	Callback = function()
@@ -238,16 +349,30 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifv
 end
 })
 
-Tab:AddToggle({
-	Name = "夜视",
-	Default = false,
-	Callback = function(Value)
-		if Value then
-		    game.Lighting.Ambient = Color3.new(1, 1, 1)
-		else
-		    game.Lighting.Ambient = Color3.new(0, 0, 0)
-		end
-	end
+Tab:AddButton({
+	Name = "穿墙(新)",
+	Callback = function()
+if Value then
+		    Noclip = true
+		    Stepped = game.RunService.Stepped:Connect(function()
+			    if Noclip == true then
+				    for a, b in pairs(game.Workspace:GetChildren()) do
+                        if b.Name == game.Players.LocalPlayer.Name then
+                            for i, v in pairs(game.Workspace[game.Players.LocalPlayer.Name]:GetChildren()) do
+                                if v:IsA("BasePart") then
+                                    v.CanCollide = false
+                                end
+                            end
+                        end
+                    end
+			    else
+				    Stepped:Disconnect()
+			    end
+		    end)
+	    else
+		    Noclip = false
+	    end
+end
 })
 
 Tab:AddButton({
@@ -272,13 +397,6 @@ end
 })
 
 Tab:AddButton({
-	Name = "点击传送工具",
-	Callback = function()
-mouse = game.Players.LocalPlayer:GetMouse() tool = Instance.new("Tool") tool.RequiresHandle = false tool.Name = "[FE] TELEPORT TOOL" tool.Activated:connect(function() local pos = mouse.Hit+Vector3.new(0,2.5,0) pos = CFrame.new(pos.X,pos.Y,pos.Z) game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos end) tool.Parent = game.Players.LocalPlayer.Backpack
-	end
-})
-
-Tab:AddButton({
 	Name = "无限跳跃",
 	Callback = function()
 loadstring(game:HttpGet("https://pastebin.com/raw/4jbsfvwH"))()
@@ -296,13 +414,6 @@ Tab:AddButton({
 	Name = "空中行走",
 	Callback = function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Float'))()
-end
-})
-
-Tab:AddButton({
-    Name = "爬墙",
-	Callback = function()
-loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))()
 end
 })
 
@@ -331,20 +442,6 @@ Tab:AddToggle({
 		    Noclip = false
 	    end
 	end
-})
-
-Tab:AddButton({
-	Name = "透视3",
-	Callback = function()
-loadstring(game:GetObjects("rbxassetid://10092697033")[1].Source)()
-	end 
-})
-
-Tab:AddButton({
-	Name = "透视2",
-	Callback = function()
-     loadstring(game:HttpGet('https://pastebin.com/raw/MA8jhPWT'))()
-  	end    
 })
 
 Tab:AddButton({
