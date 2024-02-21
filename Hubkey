@@ -99,15 +99,143 @@ if game.Players.LocalPlayer.Name == "zrugwja" then
 Whitelisted = true 
 end
 
+if game.Players.LocalPlayer.Name == "xiaolureng5" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "askyyds" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "AGcaiwui" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "AGCaiwu" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "zy88uk" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "cnm_dog" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "qkbsibbo" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "hubailin123" then 
+Whitelisted = true 
+end
+
 if game.Players.LocalPlayer.Name == "hsjdsjns" then 
 Whitelisted = true 
 end
 
-if game.Players.LocalPlayer.Name == "xuxuemo" then 
+if game.Players.LocalPlayer.Name == "wanyeeme" then 
 Whitelisted = true 
 end
 
-if game.Players.LocalPlayer.Name == "123qweasdnmp" then 
+if game.Players.LocalPlayer.Name == "yingj114514" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "Diaodes1145140" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "74aweg" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "eee9eer" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "qwq23qq" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "xiaoFBL" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "laojiangl" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "stys3721" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "Ehhsbsuj" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "CN_OPH" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "fl89292" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "cyrcsh" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "yuhjnmnmhjyu" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "Flys_Bird2" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "ikn66663" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "ikun5112" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "ikun5114" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "shoessssssssssslole" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "ijenshn" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "xinianxiangsui" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "AQingFHC77" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "QAQpus" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "951357nvjn" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "qwertyuiop31249" then 
+Whitelisted = true 
+end
+
+if game.Players.LocalPlayer.Name == "ssoo_886" then 
 Whitelisted = true 
 end
 if Whitelisted == true then
@@ -182,8 +310,8 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 Tab:AddParagraph("更新5个游戏","")
-Tab:AddParagraph("一共支持28种游戏","")
-Tab:AddParagraph("更新最强战场,监狱人生,巨魔世界,力量传奇,鲨口求生","")
+Tab:AddParagraph("一共支持30种游戏","")
+Tab:AddParagraph("越狱,巨人生存","")
 
 local Tab = Window:MakeTab({
     Name = "通用功能",
@@ -353,6 +481,13 @@ loadstring(game:GetObjects("rbxassetid://10092697033")[1].Source)()
 })
 
 Tab:AddButton({
+	Name = "透视2",
+	Callback = function()
+     loadstring(game:HttpGet('https://pastebin.com/raw/MA8jhPWT'))()
+  	end    
+})
+
+Tab:AddButton({
 	Name = "透视",
 	Callback = function()
 local esp_settings = { 
@@ -390,6 +525,7 @@ end
 end)
    end
 })
+
 Tab:AddButton({
 	Name = "飞行V3",
 	Callback = function()
